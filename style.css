@@ -45,13 +45,15 @@ body {
 
 .hero-text h2{
     font-size: 1.5rem;
-    color: #FFD700; 
+    color: #00e5ff; /* A bright, glowing cyan/blue that looks very modern*/
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
     margin-bottom: 20px;
 }
 
 .hero-text p{
     font-size: 1.1rem;
-    color: #555; 
+    color: #f8f9fa; /* Slightly off-white so it is easy on the eyes */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); 
     max-width: 600px; /*Stops the text from stretching too far wide*/
     line-height: 1.6;
 }
