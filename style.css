@@ -1,0 +1,57 @@
+/*1. Resetting default spacing*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Dancing Script", cursive; 
+    /* Using Pinterest link directly!*/
+    background-image: url(https://i.pinimg.com/736x/be/f7/3d/bef73de9d3ff7122023948f9ac3e96a5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 2. Centering everyting on the screen*/
+.hero {
+    display:flex;
+    flex-direction: column; /*Stacks the image and text vertically*/
+    align-items: center; /*Centers everything left-to-right*/
+    justify-content: center; /*Centers everything top-to-bottom*/
+    min-height: 100vh; /*Makes the section excatly as tall as your screen*/
+    text-align: center; /*Centers the actual words*/
+    padding: 20px;
+}
+
+/* 3. Making the image a circle*/
+.hero-image img{
+    width: 250px; /*How wide the image is*/
+    height: 250px; /*How tall the image is*/
+    border-radius: 50%; /*This is the magic line that makes it a perfect circle*/
+    object-fit: cover; /*Prevents the image from looking squished*/
+    margin-bottom: 30px; /*Adds space between the picture and your name*/
+}
+
+/* 4. Making the text look nice*/
+.hero-text h1{
+    font-size: 3rem;
+    color: #ffffff; /* Crisp white */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0,0.8); /* This is the shadow trick! */
+    margin-bottom: 10px;
+}
+
+.hero-text h2{
+    font-size: 1.5rem;
+    color: #FFD700; 
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 1.1rem;
+    color: #555; 
+    max-width: 600px; /*Stops the text from stretching too far wide*/
+    line-height: 1.6;
+}
