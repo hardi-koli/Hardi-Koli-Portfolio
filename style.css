@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Dancing Script", cursive; 
     /* Using Pinterest link directly!*/
@@ -55,4 +56,91 @@ body {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); 
     max-width: 600px; /*Stops the text from stretching too far wide*/
     line-height: 1.6;
+}
+
+/* --- Skills Section ---*/
+.skills-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+}
+
+/*The Grid Container*/
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap; /*This ensures cards stack on top of each other on mobile phones!*/
+    justify-content: center; /*Centers the cards in the middle of the screen*/
+    gap: 30px; /*Puts excatly 30px of space between every card*/
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+/*The Glass Cards*/
+.skill-card {
+    background-color: rgba(0, 0, 0, 0.5); /*50% transparent black*/
+    padding: 30px; 
+    border-radius: 15px; /*Soft rounded corners*/
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /*A very faint white outline*/
+    transition: transform 0.3s ease; /*Prepares the card for a hover animation*/ 
+}
+
+/* A fun hover effect*/
+.skill-card:hover {
+    transform: translateY(-10px); /*Makes the card "float" up when you hover yourmouse over it*/
+}
+
+.skill-card h3 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.skill-card p{
+    color: #f8f9fa;
+    line-height: 1.5;
+}
+
+/* --- Certificate Links & Lists --- */
+.cert-list {
+    text-align: left; 
+    padding-left: 20px;
+    color: #f8f9fa;
+}
+
+.cert-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px; 
+}
+
+.cert-link {
+    color: #ffffff; 
+    text-decoration: none; 
+    display: inline; 
+    transition: color 0.2s ease;
+}
+
+/* What happens when someone hovers their mouse over a certificate link */
+.cert-link:hover {
+    color: #00edff; 
+    text-decoration: underline; 
+}
+
+.link-icon {
+    font-size: 0.8rem;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+/* Forces the paragraph text and the links to use a clean, readable font so recruiters can scan it easily! */
+.skill-card p, .cert-list li, .cert-link {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
