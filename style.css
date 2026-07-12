@@ -207,3 +207,9 @@ cial-btn i {
     margin-bottom:0;
 }
 
+.cert-id {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6); /*A clean, faded white*/
+    display: inline-block; 
+    margin-top: 4px;
+}
