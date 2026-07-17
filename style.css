@@ -114,7 +114,7 @@ body {
 /* --- Certificate Links & Lists --- */
 .cert-list {
     text-align: left; 
-    padding-left: 0;
+    padding-left: 20px;
     color: #f8f9fa;
 }
 
@@ -191,7 +191,7 @@ body {
     transition: all 0.3s ease;
 }
 
-social-btn i {
+cial-btn i {
     font-size: 2rem; /*Making the icons slightly bigger than the text so they stand out*/
 }
 
