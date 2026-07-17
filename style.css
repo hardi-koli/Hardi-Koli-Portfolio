@@ -210,14 +210,15 @@ cial-btn i {
     margin-bottom:0;
 }
 
-/* Safety net to prevent the entire website from shifting left/right on mobile */
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 .cert-id {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.6); /*A clean, faded white*/
     display: inline-block; 
     margin-top: 4px;
+}
+
+/* Safety net to prevent the entire website from shifting left/right on mobile */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
