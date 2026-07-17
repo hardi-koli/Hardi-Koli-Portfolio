@@ -171,8 +171,7 @@ body {
 /*The Social Buttons Container*/
 .social-links {
     display:flex;
-    flex-direction: column;
-    align-item: center;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
 }
