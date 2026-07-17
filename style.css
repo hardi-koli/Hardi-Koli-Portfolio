@@ -180,6 +180,7 @@ body {
 .social-btn {
     display:flex; /* This aligns the icon and text side-by-side*/
     align-items:center; /*Centers them perfectly vertically*/
+    justify-content: center;
     gap: 10px; /*Puts a clean 10px sace between the logo and your name */
     padding: 12px 25px;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -189,6 +190,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:bold;
     transition: all 0.3s ease;
+    max-width: 100%;
 }
 
 cial-btn i {
@@ -221,4 +223,12 @@ cial-btn i {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+@media (max-width: 450px) {
+    .social-btn {
+        padding: 10px 15px; /* Slightly smaller padding for small screen*/
+        font-size: 0.9rem; /* Sightly smaller text to prevent cutting off*/
+        width: 100%; /* Forces the button to stretch nicely across the mobile screen*/
+    }
 }
