@@ -2,22 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initaial-scaled=1.0">
+        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
         <title>Hardi Koli | Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crosssrigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="light-theme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <script src="theme.js" defer></script>
     </head>
     <body>
 
+        <!-- The Navigation Bar-->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skills and certificate">Skills & Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
         <button id="theme-toggle" class="theme-btn">
             <i class="fa-solid fa-sun"></i>
         </button>
 
-        <section class="hero">
+        <section class="hero" id="hero">
 
             <div class="hero-image">
                 <img src="Assets/Images/Portrait.jpg" alt="Portrait of Hardi">
@@ -31,7 +41,7 @@
 
         </section>
 
-        <section class="skills-section">
+        <section class="skills-section" id="skills and certificate">
             <h2>Skills & Certifications</h2>
             
             <div class="skills-grid">
@@ -88,7 +98,7 @@
             </div>
         </section>
 
-        <footer class="contact-footer">
+        <footer class="contact-footer" id="contact">
             <h2>Let's Connect</h2>
             <p>Feel free to reach out for intership opportunities or collaborations.</p>
 
