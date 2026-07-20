@@ -1,0 +1,70 @@
+/* 1. Changes the mian background*/
+
+/* Using Pinterest link directly!*/
+body.light-theme {
+    background-image:url(https://i.pinimg.com/736x/be/f7/3d/bef73de9d3ff7122023948f9ac3e96a5.jpg);
+    color: #1a1a1a;
+}
+
+/*2. Remove dark shadows and change main text to dark gray*/
+body.light-theme .hero-text h1,
+body.light-theme .hero-text p,
+body.light-theme .skills-section h2,
+body.light-theme .contact-footer h2,
+body.light-theme .contact-footer p,
+body.light-theme .skill-card p,
+body.light-theme .cert-list li,
+body.light-theme .contact-footer p,
+body.light-theme .cert-link {
+    color: #2d3436;
+    text-shadow: none;
+}
+
+/*3. Change accent colors*/
+body.light-theme .hero-text h2,
+body.light-theme .skill-card h3 {
+    color: #0984e3;
+    text-shadow: none;
+}
+
+/*4. Turn the dark glass into frosted white glass*/
+body.light-theme .skill-card,
+body.light-theme .contact-footer,
+body.light-theme .theme-btn {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1 px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/*5. Update social links and icons for light mode*/
+body.light-theme .theme-btn i,
+body.light-theme .social-btn {
+    color: #2d3436;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme .social-btn:hover {
+    background-color: rgba(9, 132, 227, 0.1);
+    color: #0984e3;
+    border-color: #0984e3;
+}
+
+/*6. fix the faded text (Certificate ID and Copyright) for light mode*/
+body.light-theme .cert-id,
+body.light-theme .copyright{
+    color: rgba(0, 0, 0, 0.6); /*A clean, faded dark grey*/
+}
+
+/*7. Update Navigation Bar for light Mode*/
+body.light-theme .navbar {
+    background-color: rgba(255, 255, 255, 0.5); /*Frosted white glass*/
+    border-bottom: 1 px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .nav-links li a {
+    color: #2d3436; /* Dark gray text*/
+}
+
+body.light-theme .nav-links li align-self:hover {
+    color: #0984e3; /*Blue hover text*/
+}
