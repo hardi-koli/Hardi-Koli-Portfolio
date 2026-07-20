@@ -5,6 +5,46 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Smooth gliding animation for the whole page */
+}
+
+/* =========================================
+   🧭 NAVIGATION BAR STYLES
+   ========================================= */
+.navbar {
+    position: fixed; /* Locks it to the screen*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /*Dark Glass*/
+    backdrop-filter: blur(10px); /*Blurs whatever is behind the menu*/
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 9999; /*Forces it to always stay on top of other elements*/
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+    list-style: none; /*Removes bullet points*/
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family:"Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00e5ff; /*Cyan hover effect*/
+}
+
 /* Safety net to prevent the entire website from shifting left/right on mobile */
 html, body {
     max-width: 100%;
@@ -200,7 +240,7 @@ body {
     max-width: 100%;
 }
 
-social-btn i {
+.social-btn i {
     font-size: 2rem; /*Making the icons slightly bigger than the text so they stand out*/
 }
 
@@ -239,7 +279,7 @@ social-btn i {
 /* The Floating Button */
 .theme-btn {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
@@ -256,63 +296,4 @@ social-btn i {
 .theme-btn:hover {
     transform: scale(1.1);
     background-color: rgba(0, 229, 255, 0.3);
-}
-
-/*The Light Theme Overrides*/
-
-/* 1. Changes the mian background*/
-
-/* Using Pinterest link directly!*/
-body.light-theme {
-    background-image:url(https://i.pinimg.com/736x/be/f7/3d/bef73de9d3ff7122023948f9ac3e96a5.jpg);
-    color: #1a1a1a;
-}
-
-/*2. Remove dark shadows and change main text to dark gray*/
-body.light-theme .hero-text h1,
-body.light-theme .hero-text p,
-body.light-theme .skills-section h2,
-body.light-theme .contact-footer h2,
-body.light-theme .comtact-footer p,
-body.light-theme .skill-card p,
-body.light-theme .cer-list li,
-body.light-theme .contact-footer p,
-body.light-theme .cert-link {
-    color: #2d3436;
-    text-shadow: none;
-}
-
-/*3. Change accent colors*/
-body.light-theme .hero-text h2,
-body.light-theme .skill-card h3 {
-    color: #0984e3;
-    text-shadow: none;
-}
-
-/*4. Turn the dark glass into frosted white glass*/
-body.light-theme .skill-card,
-body.light-theme .contact-footer,
-body.light-theme .theme-btn {
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 1 px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-/*5. Update social links and icons for light mode*/
-body.light-theme .theme-btn i,
-body.light-theme .social-btn {
-    color: #2d3436;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-
-body.light-theme .social-btn:hover {
-    background-color: rgba(9, 132, 227, 0.1);
-    color: #0984e3;
-    border-color: #0984e3;
-}
-
-/*6. fix the faded text (Certificate ID and Copyright) for light mode*/
-body.light-theme .cert-id,
-body.light-theme .copyright{
-    color: rgba(0, 0, 0, 0.6); /*A clean, faded dark grey*/
 }
