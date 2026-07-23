@@ -73,7 +73,7 @@ body.light-theme .nav-links li a:hover {
     color: #0984e3; /*Blue hover text*/
 }
 
-/* Back to Top Button for light mode*/
+/*8. Back to Top Button for light mode*/
 body.light-theme .back-to-top-btn {
     background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -89,4 +89,16 @@ body.light-theme .back-to-top-btn:hover {
     border-color: #0984e3;
 }
 
+/*9. Update GitHub Section*/
+body.light-theme .github-section h2 {
+    color: #2d3436;
+    text-shadow: none;
+}
 
+body.light-theme .github-card {
+    background-color: rgba(255, 255, 255, 0.75); /*Frosted white glass*/
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
