@@ -297,3 +297,40 @@ body {
     transform: scale(1.1);
     background-color: rgba(0, 229, 255, 0.3);
 }
+
+/* ⬆️ BACK TO TOP BUTTON */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 80px; /*Placea it exactly above the theme toggle */
+    right: 20px;    
+    background-color: rgba(0, 0, 0, 0.5); /*Dark glass*/
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 03s ease;
+
+    /*This hides the buttton by default and pushes it down slightly*/
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+/*When JS adds this class, the button fades in and floats up*/
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 229, 255, 0.3);
+    border-color: #00e5ff;
+    color: #00e5ff;
+}
+
