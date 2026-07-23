@@ -102,3 +102,13 @@ body.light-theme .github-card {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
+
+body.light-theme .github-legend {
+    color: #2d3436; /*dark gray text*/
+}
+
+/*make the empty square light gray instead of white glass*/
+body.light-theme .level-0 {
+    background-color: rgba(0, 0, 0 0.1);
+}
+
