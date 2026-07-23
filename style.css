@@ -58,8 +58,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment:scroll;
-    width: 100%;
+    background-attachment: scroll;
+    width: 100%; 
     overflow-x: hidden;
 }
 
