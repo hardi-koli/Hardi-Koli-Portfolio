@@ -72,3 +72,21 @@ body.light-theme .nav-links li a {
 body.light-theme .nav-links li a:hover {
     color: #0984e3; /*Blue hover text*/
 }
+
+/* Back to Top Button for light mode*/
+body.light-theme .back-to-top-btn {
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #2d3436;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+body.light-theme .back-to-top-btn:hover {
+    background-color: rgba(9, 132, 227, 0.1);
+    color: #0984e3;
+    border-color: #0984e3;
+}
+
+
