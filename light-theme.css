@@ -2,8 +2,10 @@
 
 /* Using Pinterest link directly!*/
 body.light-theme {
-    background-image:url(https://i.pinimg.com/736x/be/f7/3d/bef73de9d3ff7122023948f9ac3e96a5.jpg);
+    background-image:url(https://i.pinimg.com/736x/93/96/51/939651027c1fb32c9b48ddbf5c1a6f23.jpg);
     color: #1a1a1a;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /*2. Remove dark shadows and change main text to dark gray*/
@@ -31,9 +33,11 @@ body.light-theme .skill-card h3 {
 body.light-theme .skill-card,
 body.light-theme .contact-footer,
 body.light-theme .theme-btn {
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 1 px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 /*5. Update social links and icons for light mode*/
@@ -65,6 +69,6 @@ body.light-theme .nav-links li a {
     color: #2d3436; /* Dark gray text*/
 }
 
-body.light-theme .nav-links li align-self:hover {
+body.light-theme .nav-links li a:hover {
     color: #0984e3; /*Blue hover text*/
 }
