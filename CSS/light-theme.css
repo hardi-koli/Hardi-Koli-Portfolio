@@ -112,3 +112,41 @@ body.light-theme .level-0 {
     background-color: rgba(0, 0, 0 0.1);
 }
 
+/* 12. Update Projects Section for Light Mode */
+body.light-theme .projects-section h2,
+body.light-theme .project-card p {
+    color: #2d3436;
+    text-shadow: none;
+}
+
+body.light-theme .project-card h3 {
+    color: #0984e3;
+    text-shadow: none;
+}
+
+body.light-theme .project-card {
+    background-color: rgba(255, 255, 255, 0.75); /* Frosted white glass */
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Light mode tags */
+body.light-theme .tech-tags span {
+    background-color: rgba(9, 132, 227, 0.1);
+    color: #0984e3;
+    border-color: rgba(9, 132, 227, 0.3);
+}
+
+/* Light mode project buttons */
+body.light-theme .project-btn {
+    color: #2d3436;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme .project-btn:hover {
+    background-color: rgba(9, 132, 227, 0.1);
+    color: #0984e3;
+    border-color: #0984e3;
+}
