@@ -298,6 +298,103 @@ body {
     background-color: rgba(0, 229, 255, 0.3);
 }
 
+/* =========================================
+   💻 PROJECTS SECTION
+   ========================================= */
+.projects-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark Glass */
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px; /* Slightly wider than skill cards to fit descriptions */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    text-align: left; /* Aligns text cleanly to the left */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #00e5ff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.project-card p {
+    color: #f8f9fa;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-grow: 1; /* Pushes buttons to the bottom evenly */
+}
+
+/* The little language tags (HTML, CSS, etc.) */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-tags span {
+    background-color: rgba(0, 229, 255, 0.1);
+    color: #00e5ff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+/* Project Links (GitHub / Live Demo) */
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: rgba(0, 229, 255, 0.2);
+    border-color: #00e5ff;
+    color: #00e5ff;
+}
+
 /* ⬆️ BACK TO TOP BUTTON */
 .back-to-top-btn {
     position: fixed;
@@ -397,4 +494,3 @@ body {
 .level-2 {background-color: #b697f6; }
 .level-3 {background-color: #9f76f4; }
 .level-4 {background-color: #8b5cf6; } /*darkest, highest purple*/
-
