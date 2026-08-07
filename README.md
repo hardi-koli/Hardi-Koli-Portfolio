@@ -6,7 +6,7 @@ I am a Computer Science Student and AI Enthusiast with a strong foundation in pr
 
 ## 🚀 Live Demo
 <!-- Replace the link below with your actual GitHub Pages link once deployed -->
-[View Live Portfolio Here](https://hardi-koli.github.io/)
+[View Live Portfolio here](https://hardi-koli.github.io/Hardi-Koli-Portfolio/)
 
 ---
 
